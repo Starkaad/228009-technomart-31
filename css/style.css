@@ -1,0 +1,41 @@
+:root {
+    --basic-clear-white :#ffffff;
+    --basic-white: #F1F5F7;
+    --basic-red: #EE3643;
+    --basic-darkblue: #293449;
+    --basic-blue: #32425C;
+    --special-yellow: #FFBF47;
+    --basic-green: #63A63E;
+    --basic-black: #000000;
+
+
+
+
+}
+
+@font-face {
+    font-family: "Cuprum", "PT Sans";
+    src: 
+      url(../fonts/cuprum.woff2),
+      url(../fonts/cuprum.woff),
+      url(../fonts/ptsans.woff2),
+      url(../fonts/ptsans.woff);
+      font-weight: 400;
+      font-style: normal;
+}
+
+@font-face {
+    font-family: "Cuprum", "PT Sans";
+    src: 
+      url(../fonts/cuprumbold.woff2),
+      url(../fonts/cuprumbold.woff),
+      url(../fonts/ptsansbold.woff2),
+      url(../fonts/ptsansbold.woff);
+      font-weight: 700;
+      font-style: normal;
+}
+
+body {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-weight: 400;
+}
