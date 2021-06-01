@@ -1,16 +1,21 @@
 :root {
-    --basic-clear-white :#ffffff;
-    --basic-white: #F1F5F7;
-    --basic-red: #EE3643;
-    --basic-darkblue: #293449;
-    --basic-blue: #32425C;
-    --special-yellow: #FFBF47;
-    --basic-green: #63A63E;
+    --basic-white :#ffffff;
+    --basic-extra-white: #F3F7F9;
     --basic-black: #000000;
-
-
-
-
+    --basic-red: #EE3643;
+    --basic-blue: #32425C;
+    --basic-grey: #3D546F;
+    --basic-greylight: #C5C5C5;
+    --basic-green: #63A63E;
+    --basic-background: #F1F5F7;
+    --basic-lightgray: #A9A9A9;
+    --success: #5FBB2D;
+    --error: #BA2732;
+    --warning: #FFBF47;
+    --special-greenlight: #8ED78F;
+    --special-lilack: #DC91D8;
+    --special-blue: #3BBCE3;
+    --special-yellowlight: #FFD180;
 }
 
 @font-face {
@@ -36,6 +41,247 @@
 }
 
 body {
-    font-family: "Cuprum", "Arial", sans-serif;
+    background-color: #888888; /* Временно для фона */
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
     font-weight: 400;
+    color: var(--basic-black);
+}
+
+.search-form input,
+.order-list a {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;    
+    color: var(--basic-white);
+}
+
+.main-header h1 {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+    font-weight: 400;    
+    color: var(--basic-red); 
+}
+
+.main-header .address {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;    
+    color: var(--basic-blue);  
+}
+
+.main-header .phone {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700;    
+    color: var(--basic-red);  
+}
+
+.personal-area .button-login,
+.personal-area .button-register {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 400;    
+    color: var(--basic-black);    
+}
+
+.site-navigation a {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;    
+    color: var(--basic-white);
+}
+
+.advantages-list li {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;    
+    color: var(--basic-white);    
+}
+
+.advantages-list a {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;    
+    color: var(--basic-white);
+}
+
+.slider-list h3 {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;    
+    color: var(--basic-white); 
+}
+
+.slider-list p {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;    
+    color: var(--basic-white);
+}
+
+.button-catalog {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;    
+    color: var(--basic-white);  
+}
+
+.popular-goods h2 {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;    
+    color: var(--basic-blue);
+}
+
+.button {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;    
+    color: var(--basic-white);  
+}
+
+.popular-goods-list li {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: var(--basic-black);
+}
+
+.popular-goods-list .old-price {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 700;
+    color: var(--basic-lightgray);
+}
+
+.popular-goods-list .actual-price {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 700;
+    color: var(--basic-white);
+}
+
+.brands h2 {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;    
+    color: var(--basic-blue);
+}
+
+.services h2 {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;    
+    color: var(--basic-black);
+}
+
+.services-item {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700;    
+    color: var(--basic-blue);  
+}
+
+.services-desc-list h3 {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;    
+    color: var(--basic-blue); 
+}
+
+.about-us h2 {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;    
+    color: var(--basic-black);
+}
+
+.about-us-item {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;    
+    color: var(--basic-black);
+}
+
+.contacts h2 {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;    
+    color: var(--basic-black);
+}
+
+.main-footer .address {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--basic-extra-white);
+}
+
+.footer-list a {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--basic-extra-white);
+}
+
+.assortment-list a {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--special-yellowlight);   
+}
+
+.copyright {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--basic-white);
+}
+
+.feedback,
+.developer {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--basic-extra-white);
+}
+
+.button-feedback,
+.button-developer {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--special-yellowlight); 
 }
