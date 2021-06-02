@@ -1,9 +1,11 @@
 :root {
     --basic-white :#ffffff;
     --basic-extra-white: #F3F7F9;
+    --basic-biege: #F9F5F0;
     --basic-black: #000000;
     --basic-red: #EE3643;
     --basic-blue: #32425C;
+    --basic-darkblue:#293449;
     --basic-grey: #3D546F;
     --basic-greylight: #C5C5C5;
     --basic-green: #63A63E;
@@ -41,12 +43,62 @@
 }
 
 body {
-    background-color: #888888; /* Временно для фона */
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
+    background-color: var(--basic-white);
     color: var(--basic-black);
+}
+
+.main-header {
+    background-color: var(--basic-background);
+}
+
+.wrapper-header,
+.site-navigation {
+    background-color: var(--basic-blue);
+}
+
+.advantages-materials {
+    background-color: var(--special-yellowlight);
+}
+
+.advantages-instruments {
+    background-color: var(--special-blue);
+}
+
+.advantages-technics {
+    background-color: var(--special-lilack);
+}
+
+.advantages-discount {
+    background-color: var(--special-greenlight);
+}
+
+.advantages-delivery {
+    background-color: var(--special-yellowlight);
+}
+
+.popular-goods-block,
+.brands-block {
+    background-color: var(--basic-biege);
+}
+
+.services {
+    background-color: var(--basic-background);
+}
+
+.main-footer {
+    background-color: var(--basic-blue);
+}
+
+.footer-bottom {
+    background-color: var(--basic-darkblue);
+}
+
+.button {
+    background-color: var(--basic-red);
 }
 
 .search-form input,
