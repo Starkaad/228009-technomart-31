@@ -4,6 +4,7 @@
     --basic-biege: #F9F5F0;
     --basic-black: #000000;
     --basic-red: #EE3643;
+    --basic-darkred: #CA2C37;
     --basic-blue: #32425C;
     --basic-darkblue:#293449;
     --basic-grey: #3D546F;
@@ -49,6 +50,101 @@ body {
     font-weight: 400;
     background-color: var(--basic-white);
     color: var(--basic-black);
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--basic-darkred);
+}
+
+.button:active {
+    background-color: var(--error);
+}
+
+.search-item:active::placeholder {
+    opacity: 50%;
+}
+
+.bookmarks:active,
+.cart:active {
+    opacity: 50%;
+}
+
+.checkout:hover,
+.checkout:focus {
+    background-color: var(--success);
+}
+
+.checkout:active {
+    background-color: var(--success);
+    opacity: 50%;
+}
+
+
+.checkout {
+    background-color: var(--basic-green);
+}
+
+.personal-area a:hover,
+.personal-area a:focus {
+    color: var(--basic-red);
+}
+
+.personal-area a:active {
+    color: var(--basic-greylight);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    background-color: darkblue;
+}
+
+.site-navigation a:active {
+    opacity: 50%;
+}
+
+.services-list a:hover,
+.services-list a:focus {
+    background-color: var(--basic-darkblue);
+}
+
+.footer-list a:hover,
+.footer-list a:focus,
+.assortment-list a:hover,
+.assortment-list a:focus {
+    text-decoration: underline;
+}
+
+.footer-list a:active,
+.assortment-list a:active {
+    opacity: 50%;
+    text-decoration: none;
+}
+
+.footer-social a:hover,
+.footer-social a:focus
+.footer-social a:active {
+    background-color: var(--basic-red);
+}
+
+.button-feedback:hover,
+.button-developer:focus {
+    text-decoration: underline;
+}
+
+.button-feedback:active,
+.button-developer:active {
+    color: var(--basic-red);
+    text-decoration: none;
+}
+
+.advantages-list a:hover,
+.advantages-list a:focus {
+    background-color: var(--basic-greylight);
+}
+
+.advantages-list a:active {
+    background-color: var(--basic-lightgray);
 }
 
 .main-header {
@@ -302,6 +398,7 @@ body {
     line-height: 24px;
     font-weight: 400;
     color: var(--basic-extra-white);
+    text-decoration: none;
 }
 
 .assortment-list a {
@@ -309,7 +406,8 @@ body {
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
-    color: var(--special-yellowlight);   
+    color: var(--special-yellowlight);
+    text-decoration: none;
 }
 
 .copyright {
@@ -335,5 +433,6 @@ body {
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
-    color: var(--special-yellowlight); 
+    color: var(--special-yellowlight);
+    text-decoration: none;
 }
