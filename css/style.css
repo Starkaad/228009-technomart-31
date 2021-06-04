@@ -80,7 +80,6 @@ body {
     opacity: 50%;
 }
 
-
 .checkout {
     background-color: var(--basic-green);
 }
@@ -96,7 +95,7 @@ body {
 
 .site-navigation a:hover,
 .site-navigation a:focus {
-    background-color: darkblue;
+    background-color: var(--basic-darkblue)
 }
 
 .site-navigation a:active {
@@ -106,6 +105,10 @@ body {
 .services-list a:hover,
 .services-list a:focus {
     background-color: var(--basic-darkblue);
+}
+
+.services-list a {
+    text-decoration: none;
 }
 
 .footer-list a:hover,
@@ -206,6 +209,10 @@ body {
     color: var(--basic-white);
 }
 
+.order-list a {
+    text-decoration: none;
+}
+
 .main-header h1 {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 16px;
@@ -220,7 +227,7 @@ body {
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;    
-    color: var(--basic-blue);  
+    color: var(--basic-blue); 
 }
 
 .main-header .phone {
@@ -228,7 +235,7 @@ body {
     font-size: 21px;
     line-height: 30px;
     font-weight: 700;    
-    color: var(--basic-red);  
+    color: var(--basic-red);
 }
 
 .personal-area .button-login,
@@ -237,7 +244,8 @@ body {
     font-size: 21px;
     line-height: 21px;
     font-weight: 400;    
-    color: var(--basic-black);    
+    color: var(--basic-black); 
+    text-decoration: none;   
 }
 
 .site-navigation a {
@@ -246,6 +254,7 @@ body {
     line-height: 24px;
     font-weight: 400;    
     color: var(--basic-white);
+    text-decoration: none;
 }
 
 .advantages-list li {
@@ -262,6 +271,7 @@ body {
     line-height: 18px;
     font-weight: 400;    
     color: var(--basic-white);
+    text-decoration: none;
 }
 
 .slider-list h3 {
@@ -301,7 +311,8 @@ body {
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;    
-    color: var(--basic-white);  
+    color: var(--basic-white);
+    text-decoration: none;
 }
 
 .popular-goods-list li {
@@ -398,6 +409,10 @@ body {
     line-height: 24px;
     font-weight: 400;
     color: var(--basic-extra-white);
+    text-decoration: none;
+}
+
+.footer-social a {
     text-decoration: none;
 }
 
