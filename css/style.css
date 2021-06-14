@@ -58,13 +58,82 @@
       font-style: normal;
 }
 
-body {
+.page-body {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
     background-color: var(--basic-white);
     color: var(--basic-black);
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
+
+.page {
+    height: 100%;
+}
+
+.main-header {
+    margin-bottom: 60px;
+    background-color: var(--basic-background);
+}
+
+.main-footer {
+    background-color: var(--basic-blue);
+}
+
+.wrapper-header {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    min-width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.order-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contacts_personal_block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.personal-area {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-navigation {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+    margin-bottom: 120px;
+}
+
+.site-navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.advantages-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .button:hover,
@@ -177,10 +246,6 @@ body {
     background-color: var(--basic-lightgray);
 }
 
-.main-header {
-    background-color: var(--basic-background);
-}
-
 .wrapper-header,
 .site-navigation {
     background-color: var(--basic-blue);
@@ -221,10 +286,6 @@ body {
 
 .perforator-desc {
     background-color: var(--basic-background);
-}
-
-.main-footer {
-    background-color: var(--basic-blue);
 }
 
 .footer-bottom {
