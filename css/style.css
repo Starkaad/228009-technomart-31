@@ -65,25 +65,48 @@
 /* Global */
 
 .page-body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
     background-color: var(--basic-white);
     color: var(--basic-black);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+/* Grid */
+
+.page {
+    height: 100%;
+}
+
+.page-body {
     min-height: 100%;
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
 }
 
-.page {
-    height: 100%;
-}
+/* Main header */
 
-/* Grid */
 .main-header-bar {
     background-color: var(--basic-blue);
+    height: 42px;
 }
 
 .main-header {
@@ -92,23 +115,63 @@
 
 .wrapper-header {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 220px 270px 1fr;
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
-  }
+}
+
+.search-form .search-item {
+    width: 100%;
+    border: none;
+    padding-left: 42px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    background-color: transparent;
+}
+
+.search-item::placeholder {
+    color: white;
+}
 
 .order-list {
+    display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.personal-block-bg {
-    background-color: var(--basic-background);
+.order-list .bookmarks {
+    margin-left: 43px;
+    margin-right: 73px;
 }
 
-.contacts_personal_block {
+.order-list .cart {
+    margin-right: 26px;
+}
+
+.order-list .checkout {
+    min-height: 42px;
+    width: 150px;
+}
+
+.checkout a {
+    padding: 0 15px;
+    background-color: var(--success);
+}
+
+.order-list a {
+    display: block;
+    text-align: center;
+    padding: 9px 0;
+}
+
+.main-header-bg {
+    background-color: var(--basic-background);
+    min-height: 340px;
+}
+
+.block-header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 940px;
@@ -116,20 +179,70 @@
     padding: 0 10px;
 }
 
-.personal-area {
-    list-style: none;
+.block-header h1 {
+    margin: 0;
+    padding-left: 30px;
+    margin-top: 46px;
+    padding-bottom: 45px;
+}
+
+.block-contacts .phone {
+    padding: 0;
+    margin: 0;
+    margin-top: 46px;
+    margin-bottom: 4px;
+    padding: 8px 50px 8px 74px;
+    border: 4px solid var(--basic-white);
+}
+
+.block-contacts .address {
     padding: 0;
     margin: 0;
 }
 
+.personal-area {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 70px;
+    margin-top: 46px;
+}
+
+.personal-area li {
+    margin-right: 10px;
+}
+
+.personal-area li:last-child {
+    margin-right: 0;
+}
+
+.personal-area a {
+    background-color: var(--basic-white);
+    display: inline-block;
+
+}
+.personal-area .button-login {
+    padding: 12px 27px 12px 45px;
+}
+
+.personal-area .button-register {
+    padding: 12px 24px;
+}
+
 .main-navigation {
-    width: 940px;
+    width: 920px;
     margin: 0 auto;
     padding: 0 10px;
+    height: 60px;
+    background-color: var(--basic-blue);
 }
 
 .site-navigation {
+    height: 100%;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
     list-style: none;
     padding: 0;
@@ -140,7 +253,6 @@
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
-    margin-bottom: 70px;
 }
 
 .advantages-list {
@@ -252,10 +364,6 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.main-header {
-    margin-bottom: 70px;
-}
-
 .catalog-page-personal-area,
 .catalog-list,
 .sorting-list,
@@ -287,25 +395,6 @@
 
 .search-item:active::placeholder {
     opacity: 50%;
-}
-
-.bookmarks:active,
-.cart:active {
-    opacity: 50%;
-}
-
-.checkout:hover,
-.checkout:focus {
-    background-color: var(--success);
-}
-
-.checkout:active {
-    background-color: var(--success);
-    opacity: 50%;
-}
-
-.checkout {
-    background-color: var(--basic-green);
 }
 
 .personal-area a:hover,
@@ -386,11 +475,6 @@
     background-color: var(--basic-lightgray);
 }
 
-.wrapper-header,
-.site-navigation {
-    background-color: var(--basic-blue);
-}
-
 .catalog h3 {
     background-color: var(--basic-background);
 }
@@ -463,7 +547,8 @@
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;    
-    color: var(--basic-blue); 
+    color: var(--basic-blue);
+    text-align: center;
 }
 
 .main-header .phone {
@@ -472,6 +557,7 @@
     line-height: 30px;
     font-weight: 700;    
     color: var(--basic-red);
+    text-align: center;
 }
 
 .personal-area .button-login,
@@ -519,8 +605,6 @@
     color: var(--basic-black);
     text-transform: uppercase;
 }
-
-
 
 .filter-form-number-bg,
 .filter-form-number {
